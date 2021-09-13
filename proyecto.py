@@ -56,7 +56,7 @@ fs=2*22050
 Ts=1/fs
 NQ=pow(2,bits)
 Q_fs=max(uncanal) #full_scale
-rango=Q_fs/NQ
+rango=[2*Q_fs]/(NQ-1)
 
 
 vT = np.array([])
